@@ -1,0 +1,185 @@
+:root {
+    --darkBg: #070742;
+    --lightMain: #FF8C00;
+}
+
+.topLogoContainer {
+    /*border: 1px white solid;*/
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoImage {
+    margin: 30px;
+    height: 60px;
+    background: transparent no-repeat center;
+    background-size: cover;
+    /*border: 2px #FF8C00 solid;*/
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.homeHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /*background: #060617;*/
+    background: var(--darkBg);
+    width: 100vw;
+    height: 100vh;
+}
+.homeHeadingContainer {
+    /*border: 1px white solid;*/
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.homeHeading {
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow:
+            3px  3px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px  1px 0 #000,
+            1px  1px 0 #000;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #02050a;
+    -webkit-text-fill-color: #FF8C00;
+    /*-webkit-text-fill-color: #05386B;*/
+    color: #eff3ec;
+    font-size: 10vw;
+}
+
+.homeHeadingUnderline {
+    align-self: flex-end;
+    height: 1px;
+    background: #a8a8a0;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.linksContainer {
+    /*border: 2px white solid;*/
+    margin: 2vh 0 0 0;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.linkButton {
+    width: 30%;
+    border: 1px #FF8C00 solid;
+    border-radius: 3px;
+    font-size: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #02050a;
+    -webkit-text-fill-color: #FF8C00;
+    /*border: 1px red dashed;*/
+}
+
+.linkButton:active {
+    background: #FF8C00;
+    color: #FF8C00;
+    font-family: 'JetBrains Mono', monospace;
+    -webkit-text-stroke-color: #02050a;
+    -webkit-text-fill-color: #060617;
+    /*border: 1px red dashed;*/
+}
+
+.homeQuotesContainer {
+    margin: 3rem 1rem 0 1rem;
+}
+
+.quotes {
+
+}
+
+.homeQuotesContainer {
+    display: none;
+}
+
+
+
+/*ipad*/
+@media only screen and (max-width: 768px) {
+}
+/*mobile*/
+@media only screen and (max-width: 460px) {
+    .homeHead {
+        background: var(--darkBg);
+        height: 60vh;
+        clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+    }
+    .guidelinesButton {
+        display: none;
+    }
+    .logoImage {
+        margin: 10px;
+        height: 30px;
+    }
+    .homeHeadingContainer {
+        margin-top: 10vh;
+        /*border: 1px red dashed;*/
+        width: 100vw;
+    }
+    .homeHeading {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #02050a;
+        -webkit-text-fill-color: #FF8C00;
+        font-size: 60px;
+    }
+    .linksContainer {
+    }
+    .linkButton {
+        font-size: 23px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #02050a;
+        -webkit-text-fill-color: #FF8C00;
+        width: 44%;
+    }
+    .homeQuotesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15vh 1rem 0 1rem;
+    }
+
+    .quotes {
+        color: var(--darkBg);
+        font-size: 4vw;
+    }
+
+    .quotes:after {
+        content: '"  ';
+        font-family: 'Bungee', cursive;
+        font-size: 9vw;
+    }
+
+    .quotes:before {
+        content: '  "';
+        font-family: 'Bungee', cursive;
+        font-size: 9vw;
+    }
+}
+
+
+
+
+
+
+

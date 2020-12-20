@@ -1,0 +1,62 @@
+:root {
+    --darkBg: #070742;
+    --lightMain: #FF8C00;
+}
+.container {
+    width: 100vw;
+}
+
+.headContainer {
+    background: var(--darkBg);
+    height: 10vh;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow:  2px 2px 5px #000;
+}
+
+.header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.miniMainHead {
+    margin-left: 6px;
+    font-size: 9vw;
+}
+
+.subHead {
+    margin-top: -5px;
+    color: white;
+    align-self: flex-end;
+    margin-left: 6px;
+    font-weight: 700;
+}
+
+.ruleSetContainer {
+    text-align: justify;
+    margin: 1rem 1rem 3rem 1rem;
+}
+
+.ruleHead {
+    font-size: 5vw;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.ruleText {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.ruleText:before {
+    content: "*   ";
+    color: #d73030;
+}
+
+@media only screen and (max-width: 460px) {
+    .container {
+    }
+}
