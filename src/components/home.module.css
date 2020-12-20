@@ -54,7 +54,7 @@
             1px  1px 0 #000;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #02050a;
-    -webkit-text-fill-color: #FF8C00;
+    -webkit-text-fill-color: #fff;
     /*-webkit-text-fill-color: #05386B;*/
     color: #eff3ec;
     font-size: 10vw;
@@ -140,7 +140,7 @@
     .homeHeading {
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #02050a;
-        -webkit-text-fill-color: #FF8C00;
+        -webkit-text-fill-color: #FFFFFF;
         font-size: 60px;
     }
     .linksContainer {
